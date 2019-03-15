@@ -1,6 +1,5 @@
 
 
-*Tutorial:* https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html
 
 
 # Summary
@@ -103,5 +102,16 @@ public class MyThread implements Runnable{
     };
 };
 ```
+
+
+# Resources
+
+Great YouTube Video:
+
+https://www.youtube.com/watch?v=TCd8QIS-2KI
+
+Build a Java Project:
+
+https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html
 
 
