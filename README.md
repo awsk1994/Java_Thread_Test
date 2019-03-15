@@ -42,7 +42,10 @@ A runnable thread enters this terminated state when it completes its task or oth
 
 # Create a thread
 
-Main method -> main thread
+Main method in java -> main thread:
+     - must be the last thread to finish execution.
+
+![Java Main Thread](img/JavaMainThread.JPG")
 
 When you have long-running operation, you don't want to put the load on the main thread because that's the reason programs go unresponsive. Instead, you want to create thread and allocate the load, and leave main thread ready for inputs.
 
@@ -50,6 +53,9 @@ When you have long-running operation, you don't want to put the load on the main
 ## 2 ways
 
 ### 1. Thread Class
+
+ - Thread class is extended only if there is a need to override other methods of it.
+ - tight coupling
 
 ```
     public class Thread extends OBject implements Runnable
@@ -77,6 +83,10 @@ public class MyThread extends Thread {
 ```
 
 ### 2. Runnable Interface (useful because multi-inheritance is not allowed in Java)
+
+ - Runnable is implemented only if there is a need of a special run method.
+ - loose coupling
+
 ```
     public interface Runnable
 ```
@@ -115,3 +125,8 @@ Build a Java Project:
 https://www.jetbrains.com/help/idea/creating-and-running-your-first-java-application.html
 
 
+# Todo:
+
+Tight vs Loose Coupling : https://www.geeksforgeeks.org/coupling-in-java/
+
+https://www.youtube.com/watch?v=TCd8QIS-2KI (until 24:30)
