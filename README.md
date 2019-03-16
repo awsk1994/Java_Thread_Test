@@ -49,6 +49,9 @@ Main method in java -> main thread:
 
 When you have long-running operation, you don't want to put the load on the main thread because that's the reason programs go unresponsive. Instead, you want to create thread and allocate the load, and leave main thread ready for inputs.
 
+## Daemon Thread
+Thread directly ran from JVM.
+
 
 ## 2 ways
 
@@ -112,7 +115,6 @@ public class MyThread implements Runnable{
     };
 };
 ```
-
 
 # Resources
 
