@@ -7,8 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2b9fefb-3b3d-4d88-b111-65912b1a77ea" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/ThreadTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/ThreadTest.java" />
     </list>
     <ignored path="ThreadTest.iws" />
@@ -48,18 +46,18 @@
       <file leaf-file-name="ThreadTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ThreadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+            <state relative-caret-position="4326">
+              <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
               <folding>
                 <element signature="class#MyTask#0" expanded="false" />
                 <element signature="class#NonThreadExample#0" expanded="false" />
                 <element signature="class#ThreadExample#0" expanded="false" />
                 <element signature="class#ParentThread#0" expanded="false" />
                 <element signature="class#ChildThread#0" expanded="false" />
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2874#2875#0" expanded="true" />
-                <element signature="e#5513#5514#0" expanded="true" />
-                <element signature="e#5563#5564#0" expanded="true" />
+                <element signature="e#2823#2824#0" expanded="true" />
+                <element signature="e#2870#2871#0" expanded="true" />
+                <element signature="e#5663#5664#0" expanded="true" />
+                <element signature="e#5713#5714#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +94,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/example/ThreadTestTest.groovy" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/ThreadTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/ThreadTest.java" />
       </list>
     </option>
   </component>
@@ -653,10 +651,10 @@
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -695,10 +693,10 @@
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,10 +727,10 @@
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -763,10 +761,10 @@
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -789,10 +787,10 @@
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -815,10 +813,10 @@
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -849,10 +847,10 @@
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -868,18 +866,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/ThreadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
+        <state relative-caret-position="4326">
+          <caret line="255" column="0" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
           <folding>
             <element signature="class#MyTask#0" expanded="false" />
             <element signature="class#NonThreadExample#0" expanded="false" />
             <element signature="class#ThreadExample#0" expanded="false" />
             <element signature="class#ParentThread#0" expanded="false" />
             <element signature="class#ChildThread#0" expanded="false" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <element signature="e#5513#5514#0" expanded="true" />
-            <element signature="e#5563#5564#0" expanded="true" />
+            <element signature="e#2823#2824#0" expanded="true" />
+            <element signature="e#2870#2871#0" expanded="true" />
+            <element signature="e#5663#5664#0" expanded="true" />
+            <element signature="e#5713#5714#0" expanded="true" />
           </folding>
         </state>
       </provider>

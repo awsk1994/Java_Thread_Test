@@ -85,7 +85,7 @@ class InterfaceThreadExample{
     };
 };
 
-/*=== MultiThreading example one ===*/
+/*=== MultiThreading Example ===*/
 class Printer{
     void printDocs(int numCopies, String docName){
         for(int i=0; i<numCopies;i++){
@@ -146,12 +146,18 @@ class MultiThreadingExample{
 
 /*=== SynchronizationExample ===*/
 class SynchronizationExample{
-    void start(){
+    void start() throws InterruptedException {
         Printer p = new Printer();
         PrinterThread docOne = new PrinterThread(p, "Synchronized A's doc.");
         PrinterThread docTwo = new PrinterThread(p, "Synchronized B's doc.");
 
         docOne.start();
+        try {
+            docOne.join();
+        } catch (InterruptedException e){
+            e.printStackTrace();
+        }
+
         docTwo.start();
 
         /*
@@ -174,7 +180,7 @@ class SynchronizationExample{
     };
 };
 
-/*=== Synchronized Method - Printer ===*/
+/*=== Synchronized Method Example ===*/
 
 class SynchronizePrinterThread extends Thread{
     Printer p;
@@ -249,7 +255,7 @@ public class ThreadTest {
         */
 
         /*
-        // Example of Synchronization
+        // Example of Synchronization (using Join)
         SynchronizationExample synchronizationExample = new SynchronizationExample();
         synchronizationExample.start();
         */
