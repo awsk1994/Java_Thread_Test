@@ -85,6 +85,140 @@ class InterfaceThreadExample{
     };
 };
 
+/*=== MultiThreading example one ===*/
+class Printer{
+    void printDocs(int numCopies, String docName){
+        for(int i=0; i<numCopies;i++){
+            System.out.println("Printing page " + i + " of doc, " + docName + ".");
+        }
+    };
+
+    synchronized void synchronizePrintDocs(int numCopies, String docName){
+        for(int i=0; i<numCopies;i++){
+            System.out.println("Synchronize Printing page " + i + " of doc, " + docName + ".");
+        }
+    };
+};
+
+class PrinterThread extends Thread{
+        Printer p;
+        String docName;
+
+        PrinterThread(Printer p, String docName){
+            this.p = p;
+            this.docName = docName;
+        };
+
+        @Override
+        public void run(){
+            p.printDocs(5, docName);
+        };
+};
+
+class MultiThreadingExample{
+    void start(){
+        Printer p = new Printer();
+        PrinterThread docOne = new PrinterThread(p, "MultiThreading A's doc.");
+        PrinterThread docTwo = new PrinterThread(p, "MultiThreading B's doc.");
+
+        docOne.start();
+        docTwo.start();
+
+        /*
+        Res:
+            Printing page 0 of doc, B's doc..
+            Printing page 0 of doc, A's doc..
+            Printing page 1 of doc, A's doc..
+            Printing page 1 of doc, B's doc..
+            Printing page 2 of doc, B's doc..
+            Printing page 2 of doc, A's doc..
+            Printing page 3 of doc, B's doc..
+            Printing page 3 of doc, A's doc..
+            Printing page 4 of doc, B's doc..
+            Printing page 4 of doc, A's doc..
+
+          When you do multithreading, the process of each thread switches (to create an illusion of parallel processing).
+          But as you can see from the results, if this was a real printer, it'll be a pain to have to then sort it by doc A and B.
+          To fix this, we need to introduce synchronization - MultiThreadingWithSynchronization
+         */
+    };
+};
+
+/*=== SynchronizationExample ===*/
+class SynchronizationExample{
+    void start(){
+        Printer p = new Printer();
+        PrinterThread docOne = new PrinterThread(p, "Synchronized A's doc.");
+        PrinterThread docTwo = new PrinterThread(p, "Synchronized B's doc.");
+
+        docOne.start();
+        docTwo.start();
+
+        /*
+        Res:
+            Printing page 0 of doc, Synchronized A's doc..
+            Printing page 1 of doc, Synchronized A's doc..
+            Printing page 2 of doc, Synchronized A's doc..
+            Printing page 3 of doc, Synchronized A's doc..
+            Printing page 4 of doc, Synchronized A's doc..
+            Printing page 0 of doc, Synchronized B's doc..
+            Printing page 1 of doc, Synchronized B's doc..
+            Printing page 2 of doc, Synchronized B's doc..
+            Printing page 3 of doc, Synchronized B's doc..
+            Printing page 4 of doc, Synchronized B's doc..
+
+        By using join, docTwo waits until docOne to finish before getting printed.
+        But what happens when we have multiple docs to print? It would be ugly to put joins everywhere.
+        Next, we will introduce the synchronized block.
+         */
+    };
+};
+
+/*=== Synchronized Method - Printer ===*/
+
+class SynchronizePrinterThread extends Thread{
+    Printer p;
+    String docName;
+
+    SynchronizePrinterThread(Printer p, String docName){
+        this.p = p;
+        this.docName = docName;
+    };
+
+    @Override
+    public void run(){
+        p.synchronizePrintDocs(5, docName);
+    };
+};
+
+class SynchronizeMethodExample{
+    void start(){
+        Printer p = new Printer();
+        SynchronizePrinterThread docOne = new SynchronizePrinterThread(p, "Synchronized method. A's doc.");
+        SynchronizePrinterThread docTwo = new SynchronizePrinterThread(p, "Synchronized method. B's doc.");
+
+        docOne.start();
+        docTwo.start();
+
+        /*
+        Res:
+            Synchronize Printing page 0 of doc, Synchronized method. A's doc..
+            Synchronize Printing page 1 of doc, Synchronized method. A's doc..
+            Synchronize Printing page 2 of doc, Synchronized method. A's doc..
+            Synchronize Printing page 3 of doc, Synchronized method. A's doc..
+            Synchronize Printing page 4 of doc, Synchronized method. A's doc..
+            Synchronize Printing page 0 of doc, Synchronized method. B's doc..
+            Synchronize Printing page 1 of doc, Synchronized method. B's doc..
+            Synchronize Printing page 2 of doc, Synchronized method. B's doc..
+            Synchronize Printing page 3 of doc, Synchronized method. B's doc..
+            Synchronize Printing page 4 of doc, Synchronized method. B's doc..
+
+         When it reaches synchronizePrintDocs() method, it will add a lock on the printer object so no other thread can access it until the method is completed.
+         */
+    };
+};
+
+
 /*=== Main Thread ===*/
 public class ThreadTest {
 
@@ -107,5 +241,24 @@ public class ThreadTest {
         InterfaceThreadExample interfaceThreadExample = new InterfaceThreadExample();
         interfaceThreadExample.start();
         */
+
+        /*
+        // Example of MultiThreading
+        MultiThreadingExample multiThreadingExample = new MultiThreadingExample();
+        multiThreadingExample.start();
+        */
+
+        /*
+        // Example of Synchronization
+        SynchronizationExample synchronizationExample = new SynchronizationExample();
+        synchronizationExample.start();
+        */
+
+        /*
+        // Example of Synchronized Method
+        SynchronizeMethodExample synchronizeMethodExample = new SynchronizeMethodExample();
+        synchronizeMethodExample.start();
+        */
+
     };
 };

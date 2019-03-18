@@ -45,13 +45,13 @@ A runnable thread enters this terminated state when it completes its task or oth
 Main method in java -> main thread:
      - must be the last thread to finish execution.
 
-![Java Main Thread](img/JavaMainThread.JPG")
+![Java Main Thread](img/JavaMainThread.JPG)
 
 When you have long-running operation, you don't want to put the load on the main thread because that's the reason programs go unresponsive. Instead, you want to create thread and allocate the load, and leave main thread ready for inputs.
 
 ## Daemon Thread
-Thread directly ran from JVM.
-
+ - Thread directly ran from JVM.
+ - Will start together with the main thread.
 
 ## 2 ways
 
@@ -115,6 +115,25 @@ public class MyThread implements Runnable{
     };
 };
 ```
+
+# MultiThreading
+
+![MultiThreading](img/MultiThreading.JPG)
+
+## Synchronization
+We need to use synchronization in multi-thread when multiple threads work on the same object.
+
+## Thread Pool
+![ThreadPool](img/ThreadPool.JPG)
+
+## Thread methods
+
+ - Creating Multiple threads
+ - Joining threads
+ - Inter Thread Communication
+ - Daemon Thread
+ - Thread.sleep()
+
 
 # Resources
 
